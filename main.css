@@ -1,0 +1,272 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    
+    width: 100%;
+}
+section{
+    margin: 10px;
+    background-color:hsla(195, 4%, 82%, 0.185);
+}
+.title{
+    text-align: center;
+    padding: 15px;
+    color:#DC7633;
+    margin: 30px;
+    
+}
+/* Header */
+header{
+    width: 100%;
+    height: 600px;
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(358, 89%, 72%, 0.336), hsla(42, 94%, 75%, 0.384), hsla(144, 100%, 89%, 0.315)), url(fariksmile.jpg); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(358, 89%, 72%, 0.336), hsla(42, 94%, 75%, 0.384), hsla(144, 100%, 89%, 0.315)), url(fariksmile.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;   
+}
+header .text-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.text-header h1{
+    font-size: 50px;
+    color: cornsilk;
+}
+.text-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: cornsilk;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 30px;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.burger {
+   position: absolute;
+   top:.75rem;
+   right: 1rem;
+   display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.burger .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+.nav-links ul{
+    display: flex;
+}
+.nav-links li{
+
+    list-style: none;
+    margin-right: 17px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    display: block;
+    color:white;
+    font-size: 19px;
+    margin-top: 8px;
+    font-family: 'Noto Sans', sans-serif;
+   
+}
+.nav-links a:hover{
+    color:hsla(25, 13%, 56%, 0.233) ;
+}
+.wave{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.text{
+    
+    
+    max-width: 80%;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+
+/* Experience */
+.skills{
+ width: 500px;
+ margin: 60px auto;
+}
+.sub-title{
+font-size: 20px;
+
+}
+.skills li{
+    margin: 20px 0;
+    
+    list-style: none;
+    cursor: pointer;
+}
+.bar{
+    background:hsla(0, 0%, 100%, 0.281);
+    display: block;
+    height: 1px;
+    border:  1px solid rgb(0,0,0,0.3);
+    border-radius: 3px;
+   
+    box-shadow:  0 0 11px #DC7633; ;
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background-color: #DC7633;;
+}
+.html{
+    width: 90%;
+    animation:  html 2s;
+}
+.css{
+    width: 80%;
+    animation:  css 2s;
+}
+.javascript{
+    width: 70%;
+    animation:  javascript 2s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+/* contact list */
+
+.contact-list{
+    background-color: hsla(0, 0%, 50%, 0.247);
+    margin: auto;
+    width: 500px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+input ,textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 11px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 17px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+#boton{
+    background-color: #31384A;
+    color: #fff;
+    padding: 13px;
+}
+#boton:hover{
+    cursor: pointer;
+}
+/*Social-media*/
+.Social{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 60px; 
+}
+}
+.dado:hover{
+    transform: scale(2,2) ;
+ 
+}
+/*contact-icon*/
+.contact-icon-class{
+    background-color: #31384A;
+    color: #fff;
+   
+}
+.contact-icon{
+    margin: 5px 10px;
+    padding: 10px;
+}
+.nano{
+    margin-left: 10px;
+}
+
+@media  (max-width: 500px){
+    .burger {
+        display: flex;
+    }
+            
+   .nav-links {
+       display: none;
+       width: 100%;
+       
+   }
+   .navbar{
+    flex-direction: column;
+    
+   }
+   .nav-links ul{
+       width: 100%;
+       flex-direction: column;
+   }
+   .nav-links li{
+       text-align: center;
+   }
+   .nav-links li a {
+       padding: .5rem 1rem;
+   }
+   .nav-links.active{
+       display: flex;
+   }
+   .contact-list{
+       width: 100%;
+   }
+   .skills{
+    width: 300px;
+    
+   }
+}
+
+
+
